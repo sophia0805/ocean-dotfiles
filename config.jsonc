@@ -2,33 +2,64 @@
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "modules": [
     "title",
-    "separator",
-    "os",
+    {
+      "type": "custom",
+      "format": "\u001b[92m┌───────────────────────────󰋊 Hardware 󰋊──────────────────────────┐"
+    },
+    "cpu",
+    "gpu",
+    "memory",
     "host",
-    "kernel",
-    "uptime",
-    "packages",
-    "shell",
+    "disk",
     "display",
-    "de",
+    {
+      "type": "custom",
+      "format": "\u001b[92m└─────────────────────────────────────────────────────────────────┘"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[92m┌───────────────────────────󰋊 System 󰋊──────────────────────────┐"
+    },
+    "os",
     "wm",
     "wmtheme",
+    "de",
+    "kernel",
+    "packages",
+    "shell",
+    "terminal",
+    "terminalfont",
+    {
+      "type": "custom",
+      "format": "\u001b[92m└───────────────────────────────────────────────────────────────┘"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[92m┌───────────────────────────󰋊 Session 󰋊──────────────────────────┐"
+    },
+    "uptime",
+    "battery",
+    "localip",
+    {
+      "type": "custom",
+      "format": "\u001b[92m└────────────────────────────────────────────────────────────────┘"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[92m┌───────────────────────────󰋊 Other 󰋊──────────────────────────┐"
+    },
     "theme",
     "icons",
     "font",
     "cursor",
-    "terminal",
-    "terminalfont",
-    "cpu",
-    "gpu",
-    "memory",
     "swap",
-    "disk",
-    "localip",
-    "battery",
     "poweradapter",
     "locale",
     "break",
+    {
+      "type": "custom",
+      "format": "\u001b[92m└──────────────────────────────────────────────────────────────┘"
+    },
     "colors"
   ],
   "logo": {
@@ -38,6 +69,7 @@
     "padding": {
       "top": 8,
       "left": 3
-    }
+    },
+    "color": {"1":"white"}
   }
 }
